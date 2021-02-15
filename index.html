@@ -14,12 +14,19 @@
   </head>
   <body>
     <header>
-      <h1>Vue Course Goals</h1>
+      <h1>Vue Events</h1>
     </header>
-    <section id="user-goal">
-      <h2>My Course Goal</h2>
-      <p v-html="outputGoal()"></p>
-      <p>Learn more <a v-bind:href="vueLink">about Vue</a></p>
+    <section id="events">
+      <h2>Events in Action</h2>
+      <button v-on:click="add()">Add</button>
+      <button v-on:click="reduce()">Reduce</button>
+      <p>Result: {{ counter }}</p>
+      <input type="text" v-on:input="setName">
+      <p>Your Name : {{name}}</p>
+      <form v-on:submit.prevent="submitForm">
+        <input type="text">
+        <button>Sign Up</button>
+      </form>
     </section>
   </body>
 </html>
