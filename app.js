@@ -3,8 +3,8 @@ const app = Vue.createApp({
         return {
             courseGoal: 'Learning Vue',
             vueLink: 'https://vuejs.org/',
-            goalA: 'Finishing Vue Course',
-            goalB: 'Mastering Vue'
+            goalA: '<h3>Finishing Vue Course</h3>',
+            goalB: '<h3>Mastering Vue</h3>'
         };
     },
     methods: {
