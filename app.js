@@ -6,6 +6,9 @@ const app = Vue.createApp({
       };
     },
     methods: {
+        submitForm(){
+            alert('berhasil dikirm');
+        },
         setName(e){
             this.name = e.target.value;
         },
