@@ -17,6 +17,9 @@ const app = Vue.createApp({
         },
         reduce(){
             this.counter = this.counter - 1;
+        },
+        resetValue(){
+            this.name = '';
         }
     }
   });
